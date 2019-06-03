@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="QueryTrainEP" groupId="com.example.TrainReservationServices.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueryTrainEP.xml</file>
+    </artifact>
+    <artifact name="TrainInformationAPI" groupId="com.example.TrainReservationServices.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/TrainInformationAPI.xml</file>
+    </artifact>
+    <artifact name="SampathEP" groupId="com.example.TrainReservationServices.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/SampathEP.xml</file>
+    </artifact>
+    <artifact name="SampathAPI" groupId="com.example.TrainReservationServices.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/SampathAPI.xml</file>
+    </artifact>
+    <artifact name="DialogEP" groupId="com.example.TrainReservationServices.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/DialogEP.xml</file>
+    </artifact>
+    <artifact name="DialogEzCashAPI" groupId="com.example.TrainReservationServices.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/DialogEzCashAPI.xml</file>
+    </artifact>
+    <artifact name="GovernmentEP" groupId="com.example.TrainReservationServices.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/GovernmentEP.xml</file>
+    </artifact>
+    <artifact name="GovernmentDeptService" groupId="com.example.TrainReservationServices.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/GovernmentDeptService.xml</file>
+    </artifact>
+</artifacts>

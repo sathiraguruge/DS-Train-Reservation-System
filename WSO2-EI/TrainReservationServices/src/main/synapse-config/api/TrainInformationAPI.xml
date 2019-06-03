@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/train" name="TrainInformationAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/queryTrain/{trainId}">
+        <inSequence>
+            <log description="Train Request Log" level="custom">
+                <property name="message" value="&quot;Train System&quot;"/>
+            </log>
+            <send>
+                <endpoint key="QueryTrainEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

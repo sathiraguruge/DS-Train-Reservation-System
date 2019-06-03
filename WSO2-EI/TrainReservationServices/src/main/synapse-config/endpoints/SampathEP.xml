@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="SampathEP" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" trace="enable" uri-template="http://localhost:8080/train_service/rest/paymentgateway/cards/verifyCard/{uri.var.cardNo}/{uri.var.cvcNo}/{uri.var.holderName}"/>
+</endpoint>

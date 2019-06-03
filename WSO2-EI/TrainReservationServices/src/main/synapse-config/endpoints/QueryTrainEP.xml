@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="QueryTrainEP" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="http://localhost:8080/train_service/rest/trains/{uri.var.trainId}"/>
+</endpoint>

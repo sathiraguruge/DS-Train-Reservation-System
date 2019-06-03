@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/dialogPayment" name="DialogEzCashAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/processMobilePayment/{mobileNo}/{pin}">
+        <inSequence>
+            <log description="Dialog log" level="custom">
+                <property name="message" value="&quot;Dialog Ez Cash Service&quot;"/>
+            </log>
+            <send>
+                <endpoint key="DialogEP"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

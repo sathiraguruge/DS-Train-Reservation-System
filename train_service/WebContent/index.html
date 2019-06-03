@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Online Train Reservation</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="train.js"></script>
+<script src="calculate.js">
+	
+</script>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+	<select name="trains" id="trainID">
+		<option value="1">Mount Lavinia/Kankesanthurai - AC Intercity</option>
+		<option value="2">Colombo/Kandy - Night Mail</option>
+		<option value="3">Colombo/Batticaloa - Udaya Devi</option>
+		<option value="4">Colombo/Batticaloa - Night mail Express</option>
+		<option value="5">Colombo/Badulla - Udarata Manike</option>
+		<option value="6">Colombo/Badulla - Night mail Express</option>
+		<option value="7">Colombo/Kandy - AC Intercity</option>
+	</select>
+	<button onclick="getTrain()">Show Train Details</button>
+	</br>
+	</br>
+
+	<table style="border: 1px solid black;">
+		<th style="border: 1px solid black;"></th>
+		<th style="border: 1px solid black;">Train</th>
+		<th style="border: 1px solid black;">Train Name</th>
+		<th style="border: 1px solid black;">Train Number</th>
+		<th style="border: 1px solid black;">Arrival Time</th>
+		<th style="border: 1px solid black;">Departure Time</th>
+		<th style="border: 1px solid black;">Ticket Price per Head</th>
+		<tr>
+			<td>
+				<p>
+					<input type="number" id="trainbookingID" value="" readonly>
+				</p>
+
+			</td>
+			<td>
+				<div id="train"></div>
+			</td>
+			<td>
+				<div id="trainName"></div>
+			</td>
+			<td>
+				<div id="trainNumber"></div>
+			</td>
+			<td>
+				<div id="Arrival"></div>
+			</td>
+			<td>
+				<div id="Departure"></div>
+			</td>
+			<td>
+				<p>
+					<input type="number" id="ticketPrice" value="" readonly>
+				</p>
+			</td>
+		</tr>
+	</table>
+	</br>
+	</br> Ticket Count :
+	<br />
+	<input type="number" id="ticketCount" />
+
+	<button onclick="getTotal()">Calculate Total</button>
+
+	<br />
+	<br />Total Price :
+	<br />
+
+	<p>
+		<input type="number" id="total" value="" readonly>
+	</p>
+
+	<br />Select Payment Method :
+	</br>
+	</br>
+
+	<select name="payments" id="payment">
+		<option value="Mobile">Mobile</option>
+		<option value="CC">Credit Card</option>
+	</select>
+	</br>
+	</br>
+
+	<button onclick="redirectPayment()">Book Tickets</button>
+</body>
+</html>
